@@ -35,7 +35,7 @@ test('test receiveAttack with sinking hit', () => {
   const coords = gameboard.makeShip(2, true);
   const ship = Ship(coords);
   gameboard.newShip(ship);
-  const res = gameboard.receiveAttack(coords[0][0], coords[0][1]);
+  gameboard.receiveAttack(coords[0][0], coords[0][1]);
   const result = gameboard.receiveAttack(coords[1][0], coords[1][1]);
   expect(result[0]).toBe(true);
   expect(result[1]).toBe(true);

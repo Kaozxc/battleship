@@ -9,3 +9,6 @@ npm install
 
 Run tests:
 npm run test
+
+Build using webpack:
+npm run build
